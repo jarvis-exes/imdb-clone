@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>IMDB Favorites</title>
+    <link rel="icon" href="../images/imdb-tab-icon.png" type="image/x-icon">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../home.css">
+    <link rel="stylesheet" href="fav.css">
+</head>
+<body>
+    
+    <!-- Outer container -->
+    <div class="outer-container">
+
+        <section id="navbar">
+            <div id="home-button">
+                 <a href="../index.html"><img src="../images/imdb-home.png" alt="imdb-home-logo" class="nav-button"></a>
+            </div> 
+            <div  id="menu-button">
+                 <button class="nav-button" >
+                     <img src="../images/main-menu.png" class="button-icon" >
+                     <span>Menu</span>
+                 </button>
+            </div>
+            <div>
+                 <a href="../favorites/favourite.html">
+                     <button  class="nav-button">
+                         <img src="../images/favorite.png" alt="">
+                         <span>Favorites</span>
+                     </button>
+                 </a>
+                 
+            </div>
+            <div >
+                 <button class="nav-button">
+                     <span>Sign&nbsp;In</span>
+                 </button>
+            </div>
+            <div>
+                 <button class="nav-button">
+                     <span>EN</span>
+                 </button>
+            </div>
+         </section>
+        
+        <!-- Start Fav-Movies -->
+        <div class="container">
+            <div class="result-container">
+              
+                <!-- All movies that are added to Favourites are appended here -->
+
+            </div>
+        <!-- End Fav-Movies -->
+
+    </div>
+
+    <!-- JS file -->
+    <script src="favScript.js"></script>
+</body>
+</html>

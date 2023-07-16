@@ -1,6 +1,7 @@
 body{
     background-color: black;
     margin: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
  /* Navigation Bar */
@@ -32,6 +33,7 @@ body{
     color: aliceblue;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
  }
 
  .nav-button img{
@@ -48,6 +50,10 @@ body{
     font-weight: 600;
  }
 
+ a {
+    text-decoration: none;
+ }
+
  .nav-button:hover {
     background-color: rgb(71, 71, 71);
  }
@@ -59,7 +65,6 @@ body{
     margin-right: 10px;
     background-color: white;
     color: black;
-
  }
 
  #search{
@@ -72,3 +77,250 @@ body{
  #search:focus{
     outline: none;
  }
+
+ #main {
+    display: flex;
+    justify-content: center;
+ }
+ .search-list {
+    width: 45%;
+    min-width: 480px;
+    top: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: rgb(36, 36, 36);
+  }
+  
+  .search-list .search-list-item {
+    padding: 0.5rem;
+    /* border-bottom: 1px solid rgb(102, 102, 102); */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 200ms ease;
+  }
+  
+  .search-list .search-list-item:hover {
+    background-color: #7a7c02;
+  }
+  
+  .search-list-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-item-thumbnail img {
+    width: 40px;
+    margin-right: 1rem;
+  }
+  
+  .search-item-info h3 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .search-item-info p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+  }
+  
+  /* thumbnail */
+  .search-list::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  .search-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .search-list::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    outline: none;
+    border-radius: 10px;
+  }
+
+  /* js related class */
+.hide-search-list {
+    display: none;
+  }
+
+/* Movie Page css*/
+
+.result-container {
+  padding: 4rem 0;
+}
+
+/* poster image container */
+.movie-poster{
+  margin-left: 27%;
+}
+.movie-poster img {
+  max-width: 300px;
+  margin: 0 auto;
+  border: 4px solid #fff;
+}
+
+/* Movie infromation Container */
+.movie-info {
+  text-align: center;
+  color: #fff;
+  padding-top: 3rem;
+}
+
+.movie-title {
+  font-size: 2rem;
+  color: var(--yellow-color);
+}
+
+.movie-misc-info {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.movie-info .year {
+  font-weight: 600;
+}
+
+.movie-info .rated {
+  background-color: var(--yellow-color);
+  padding: 0.4rem;
+  margin: 0 0.4rem;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.movie-info .released {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.movie-info .writer {
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.movie-info .genre {
+  background-color: var(--light-dark-color);
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.movie-info .plot {
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.movie-info .language {
+  color: var(--yellow-color);
+}
+
+.movie-info .awards {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin: 0.9rem 0;
+}
+
+.movie-info .awards i {
+  color: var(--yellow-color);
+  margin: 0 0.2rem;
+}
+
+/* Add to Favourites button */
+#addToFav {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #292929;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+}
+#addToFav:hover {
+  background-color: rgb(252, 0, 0);
+}
+/* End of Movie Page  */
+
+/* media queries */
+
+@media screen and (max-width: 450px) {
+  .logo a {
+    font-size: 1.4rem;
+  }
+  .search-element .form-control {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .search-elementh h3 {
+    font-size: 1.4rem;
+  }
+  .search-list {
+    width: 90%;
+    right: 50%;
+    transform: translateX(50%);
+  }
+
+  .search-list .search-list-item {
+    width: 100%;
+  }
+
+  .movie-misc-info {
+    flex-direction: column;
+  }
+
+  .movie-misc-info:nth-child(2) {
+    margin: 0.8rem 0;
+  }
+
+  #addToFav {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .search-element {
+    flex-direction: row;
+  }
+
+  .search-element h1 {
+    margin-bottom: 0;
+  }
+
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .movie-info {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .movie-info .movie-misc-info {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  .movie-info .plot {
+    margin-left: 0;
+  }
+
+  .movie-info .writer {
+    padding-left: 0;
+    margin-left: 0;
+  }
+} 
