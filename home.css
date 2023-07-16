@@ -38,7 +38,6 @@ body{
 
  .nav-button img{
     height: 55%;
-    /* margin-top: 6px; */
     align-self:center;
     margin-left: 5px;
  }
@@ -233,7 +232,7 @@ body{
 /* Add to Favourites button */
 #addToFav {
   display: block;
-  width: 50%;
+  width: 80%;
   margin: auto;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -249,7 +248,7 @@ body{
   cursor: pointer;
 }
 #addToFav:hover {
-  background-color: rgb(252, 0, 0);
+  background-color: grey;
 }
 /* End of Movie Page  */
 
