@@ -152,7 +152,7 @@ body{
 
 /* poster image container */
 .movie-poster{
-  margin-left: 27%;
+  margin-left: 25%;
 }
 .movie-poster img {
   max-width: 300px;
@@ -232,7 +232,7 @@ body{
 /* Add to Favourites button */
 #addToFav {
   display: block;
-  width: 80%;
+  width: 50%;
   margin: auto;
   margin-top: 20px;
   font-size: 1.5rem;
@@ -248,7 +248,7 @@ body{
   cursor: pointer;
 }
 #addToFav:hover {
-  background-color: grey;
+  background-color: rgb(250, 2, 2);
 }
 /* End of Movie Page  */
 

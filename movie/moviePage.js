@@ -60,10 +60,12 @@ if (movieID) {
 //Favourite Button
 const addToFav = () => {
           addToFavBtn.textContent = "Added To Favourites";
+          addToFavBtn.style.backgroundColor = 'red';
 
           //Check if movie is already added to the list
           if (favMovies.includes(movieID)) {
                     addToFavBtn.textContent = "Already Added To Favourites";
+                    addToFavBtn.style.backgroundColor = 'red';
           } else {
                     favMovies.push(movieID); //Add movie to favourite list
 
